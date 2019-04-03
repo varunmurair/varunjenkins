@@ -1,0 +1,17 @@
+pipeline{
+
+agent any
+
+	stages
+	{
+		stage ('complie stage')
+		{
+			steps{echo 'complie process on'}
+		}
+		
+		stage ('run stage')
+		{
+			steps{input(' do you want to proceed?')}
+		}
+	}
+}		
