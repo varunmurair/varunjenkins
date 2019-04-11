@@ -7,8 +7,8 @@ agent any
 		stage ('complie stage')
 		{
 			steps{
-				withMaven(maven : 'maven_3_6_0')
-				{	sh 'mvn clean compile' }
+				withJava(java : 'jdk')
+				{	sh 'java -version' }
 
 				}
 		}
