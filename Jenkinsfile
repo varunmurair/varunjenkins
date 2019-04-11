@@ -7,7 +7,7 @@ agent any
 		stage ('complie stage')
 		{
 			steps{
-				withJava(java : 'jdk')
+				withJDK(java : 'jdk')
 				{	sh 'java -version' }
 
 				}
